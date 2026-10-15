@@ -26,7 +26,7 @@ Zebra is an independent, production-ready full node implementation of the Zcash 
 
 Zebra validates blocks and transactions, participates in the peer-to-peer network, and exposes an RPC interface for applications. The wallet is a separate component now: [Zallet](https://github.com/zcash/zallet) runs against a Zebra node and handles keys and balances. This replaces zcashd, which bundled the node and wallet in a single process.
 
-To serve shielded light wallets, the node runs alongside an indexer, either the established [lightwalletd](https://github.com/zcash/lightwalletd) or the newer [Zaino](https://zechub.wiki/zcash-tech/zaino).
+To serve shielded light wallets, Zebra 6.4+ offers an experimental gRPC server compatible with lightwalletd (enable `rpc.lightwalletd_listen_addr`). External [lightwalletd](https://github.com/zcash/lightwalletd) or [Zaino](https://zechub.wiki/zcash-tech/zaino) services remain alternatives.
 
 Be sure to read the Zebra book for set-up instructions, and join the R&D Discord server for support.
 
