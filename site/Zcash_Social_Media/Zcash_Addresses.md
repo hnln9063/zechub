@@ -99,7 +99,7 @@ Read more: [ZIP 209: Prohibit Out-of-Range Chain Value Pool Balances](https://zi
 
 ## Future Improvements
 
-The ECC team is working on new RPC methods in `zcashd` (replacing `z_sendmany`) that will let users preview and accept/reject a proposed transaction based on its privacy characteristics.
+For a current review-before-signing workflow, **Zallet** provides `pczt_create` to build a proposed transaction and report the privacy policy it requires, followed by `pczt_inspect` to review its recipients, amounts, fees, and signing status before proceeding. These RPCs are available in Zallet wallet builds; Zallet is still beta, so check its [PCZT RPC documentation](https://zcash.github.io/zallet/rpc/index.html) and your wallet's current capabilities before relying on this flow.
 
 ---
 
